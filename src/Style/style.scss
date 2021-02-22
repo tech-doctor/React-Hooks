@@ -1,0 +1,82 @@
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em 1.5em;
+    background-color: rgb(18, 112, 107);
+    color: white;
+}
+.navBar .left{
+    font-size: 20px;
+}
+
+.navBar .right{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navDetails{
+    background-color: rgb(32, 34, 32);
+    width: 120px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    //display: none;
+}
+
+.navDetails p{
+    cursor: pointer;
+    padding: 0.5em 0em;
+}
+
+.navDetails p:hover{
+    background-color: rgb(70, 70, 70);
+}
+
+table{
+    width: 100%;
+    // border-spacing: 3px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 0.2em 1em;
+  }
+
+  .loading{
+      margin-top: 200px;
+  }
+
+  .loading:empty { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 3em;
+    height: 3em;
+    border-right: 3px solid  rgb(12, 12, 12) ;
+    border-left: 3px solid rgb(190, 190, 190) ;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-radius: 50%;
+    animation: load 1s infinite linear; 
+  }
+  
+  @keyframes load {
+    0% {
+  transform: rotate(0deg)}
+    
+    100% {
+  transform: rotate(360deg)}
+  }
+  
+//   @media(max-width:700px) {
+//     .loading:empty {
+//       top: 46%;
+//       left: 47%;
+//     }
+//   }
