@@ -7,7 +7,7 @@
     color: white;
 }
 .navBar .left{
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .navBar .right{
@@ -44,11 +44,25 @@
     z-index: 1;
     opacity: 4;
 }
+.heading{
+    font-size: 22px;
+    font-weight: 700;
+    color:  rgb(0, 0, 0);
+}
 
 table{
     width: 100%;
-    // border-spacing: 3px;
 }
+
+a{
+    color: rgb(27, 27, 133);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 
 table, th, td {
     border: 1px solid black;
@@ -83,9 +97,9 @@ table, th, td {
   transform: rotate(360deg)}
   }
   
-//   @media(max-width:700px) {
-//     .loading:empty {
-//       top: 46%;
-//       left: 47%;
-//     }
-//   }
+  @media(max-width:800px) {
+    .table{
+        overflow-x: scroll;
+        width: 100%;
+    }
+  }

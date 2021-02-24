@@ -16,3 +16,10 @@
         width: 95%;
     }
 }
+
+.error-message{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}

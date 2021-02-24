@@ -13,17 +13,20 @@ import React from 'react'
 				<table>
 					<thead>
 						<tr>
-							<th>Id</th>
-							<th>Title</th> 
-							<th>Body</th>
+							<th>S/N</th>
+							<th>Name</th> 
+							<th>Email</th>
+							<th>Website</th>
 						</tr>
 					</thead>
 					{users.map((post) => 
 					(<tbody key = {post.id}>
 						<tr>
 							<td>{post.id}</td>
-							<td>{post.title}</td> 
-							<td> {post.body}</td>
+							<td>{post.name}</td> 
+							<td> {post.email}</td>
+							{}
+							<td><a href = {'https://www.' + post.website} target="_top">{post.website}</a></td>
 						</tr>
 					</tbody>)
 				)}

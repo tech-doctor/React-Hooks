@@ -15,6 +15,7 @@ function App() {
   const [query, setQuery] = useState('Posts')
   const [loading, setLoading] = useState(false)
   const [posts, setPosts] = useState([])
+  const [error, setError] = useState('')
 
   const getPost = () => {
 		setTimeout(() => {
@@ -25,7 +26,11 @@ function App() {
 					setPosts(postData)	
 					setLoading()
 				})
-			.catch(error => console.log(error))
+			.catch(err => {
+        setError(err.message)
+        setLoading()
+        return error
+      })
 	  })
 	}
 
@@ -67,11 +72,6 @@ function App() {
 			}
       {(() => {
         switch (query) {
-          /* case 'Posts':
-          return (
-            <Posts query = {query} posts = {posts}/>
-          );
-          break; */
           case 'Todos':
           return  (
             <Todos query = {query} todos = {posts}/>
@@ -87,6 +87,9 @@ function App() {
           )
         }
       })()}
+      {error? 
+      <div className = 'error-message'> something went wrong, try again...</div> : ''
+      }
     </div>
   );
 }

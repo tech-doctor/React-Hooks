@@ -13,7 +13,7 @@ const  Post = (props) => {
 				<table>
 					<thead>
 						<tr>
-							<th>Id</th>
+							<th>S/N</th>
 							<th>Title</th> 
 							<th>Body</th>
 						</tr>

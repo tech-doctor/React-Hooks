@@ -13,9 +13,9 @@ const  todos = (props) => {
 				<table>
 					<thead>
 						<tr>
-							<th>Id</th>
+							<th>S/N</th>
 							<th>Title</th> 
-							<th>Body</th>
+							<th>completed</th>
 						</tr>
 					</thead>
 					{todos.map((post) => 
@@ -23,7 +23,10 @@ const  todos = (props) => {
 						<tr>
 							<td>{post.id}</td>
 							<td>{post.title}</td> 
-							<td> {post.body}</td>
+							{post.completed? 
+							<td> Completed</td> : 
+							<td> Not completed</td>
+							}	
 						</tr>
 					</tbody>)
 				)}
