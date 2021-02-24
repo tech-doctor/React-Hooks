@@ -1,7 +1,7 @@
 import React from 'react'
 
- const users = (props) =>  {
-	 const {query, users } = props
+const  todos = (props) => {
+	const {query, todos} = props
     return (
 		<div>	
     <div>
@@ -18,7 +18,7 @@ import React from 'react'
 							<th>Body</th>
 						</tr>
 					</thead>
-					{users.map((post) => 
+					{todos.map((post) => 
 					(<tbody key = {post.id}>
 						<tr>
 							<td>{post.id}</td>
@@ -35,4 +35,4 @@ import React from 'react'
 	)
 }
 
-export default users
+export default todos

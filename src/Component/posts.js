@@ -1,8 +1,8 @@
-import React from 'react'
+import React  from 'react'
 
- const users = (props) =>  {
-	 const {query, users } = props
-    return (
+const  Post = (props) => {
+	const {query, posts} = props 
+	return (
 		<div>	
     <div>
 			<div className = "heading">
@@ -18,7 +18,7 @@ import React from 'react'
 							<th>Body</th>
 						</tr>
 					</thead>
-					{users.map((post) => 
+					{posts.map((post) => 
 					(<tbody key = {post.id}>
 						<tr>
 							<td>{post.id}</td>
@@ -35,4 +35,15 @@ import React from 'react'
 	)
 }
 
-export default users
+export default Post
+
+// switch(expression) {
+//   case x:
+//     // code block
+//     break;
+//   case y:
+//     // code block
+//     break;
+//   default:
+//     // code block
+// }

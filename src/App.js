@@ -1,33 +1,92 @@
 import { useEffect, useState } from 'react'
-import NavBar from './Component/navbar'
+// import NavBar from './Component/navbar'
 import './App.css';
 import './Style/style.scss'
-import Post from './Component/post'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import  {faEllipsisV}  from '@fortawesome/free-solid-svg-icons'
+import Posts from './Component/posts'
+import Todos from './Component/todos'
+import Users from './Component/users'
+
 
 
 function App() {
-  // const [count , setCount] = useState(0)
-  // const [todos, setTodo] = useState([{ text: 'Learn Hooks '}]);
+  const [detailsVisible, setDetailsVisible] = useState(false)
+  const [query, setQuery] = useState('Posts')
+  const [loading, setLoading] = useState(false)
+  const [posts, setPosts] = useState([])
 
-//  useEffect(() => {
-//    document.title = `You clicked ${count} times`;
-//  },[count]);
- //NOTE:  the [count] here allows the re-run of the effect only if the count changes
-   
+  const getPost = () => {
+		setTimeout(() => {
+			fetch(`https://jsonplaceholder.typicode.com/${query}`)
+				.then(response => response.json())
+				.then(data => {
+					const postData = data.slice(0,5)
+					setPosts(postData)	
+					setLoading()
+				})
+			.catch(error => console.log(error))
+	  })
+	}
 
-  //  useEffect(() => {
-  //   fetch('https://jsonplaceholder.typicode.com/todos')
-  //   .then(response => response.json())
-  //   .then(json => console.log(json))
-  //  })
- 
+
+	
+  useEffect(() => {
+		setLoading(true)
+		getPost()	
+	},[query])
+
+
+
   return (
     <div className="App">
-      {/* <button onClick = {() => setCount(count + 1)}>
-        Increment
-      </button> */}
-      <NavBar/>
-      <Post/>
+      <div>
+        <div className ="navBar">
+          <div className = "left">
+            <p>React Hooks</p>
+          </div>
+          <div className = "right">
+            <FontAwesomeIcon icon={faEllipsisV}
+            onClick= {() => setDetailsVisible(!detailsVisible)}
+            />	
+          </div> 	
+        </div>
+        {detailsVisible? 
+        <div>
+          <div className = "modal-background" onClick = {() => setDetailsVisible()}>
+          </div>
+          <div className = "navDetails">
+            <p onClick = {() => setQuery('Posts')}>Posts</p>
+            <p onClick = {() => setQuery('Todos')}>Todos</p>
+            <p onClick = {() => setQuery('Users')}>Users</p>
+          </div> 
+        </div>: '' }	
+      </div>
+      {loading? 
+				<div className = "loading"></div> : ''
+			}
+      {(() => {
+        switch (query) {
+          /* case 'Posts':
+          return (
+            <Posts query = {query} posts = {posts}/>
+          );
+          break; */
+          case 'Todos':
+          return  (
+            <Todos query = {query} todos = {posts}/>
+          );
+          break;
+          case 'Users':
+          return  (
+            <Users query = {query} users = {posts}/>
+          );  
+          default:
+          return (
+            <Posts query = {query} posts = {posts}/>
+          )
+        }
+      })()}
     </div>
   );
 }
