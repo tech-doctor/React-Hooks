@@ -39,7 +39,8 @@ function App() {
   useEffect(() => {
 		setLoading(true)
 		getPost()	
-	},[query])
+  },[query])
+
 
 
 
@@ -61,9 +62,9 @@ function App() {
           <div className = "modal-background" onClick = {() => setDetailsVisible()}>
           </div>
           <div className = "navDetails">
-            <p onClick = {() => setQuery('Posts')}>Posts</p>
-            <p onClick = {() => setQuery('Todos')}>Todos</p>
-            <p onClick = {() => setQuery('Users')}>Users</p>
+            <p onClick = {() => {setQuery('Posts'); setDetailsVisible()}}>Posts</p>
+            <p onClick = {() => { setQuery('Todos'); setDetailsVisible() }}>Todos</p>
+            <p onClick = {() => {setQuery('Users'); setDetailsVisible()}}>Users</p>
           </div> 
         </div>: '' }	
       </div>

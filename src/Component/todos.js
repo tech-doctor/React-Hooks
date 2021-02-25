@@ -15,7 +15,7 @@ const  todos = (props) => {
 						<tr>
 							<th>S/N</th>
 							<th>Title</th> 
-							<th>completed</th>
+							<th>Status</th>
 						</tr>
 					</thead>
 					{todos.map((post) => 
