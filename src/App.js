@@ -69,9 +69,10 @@ function App() {
         </div>: '' }	
       </div>
       {loading? 
-				<div className = "loading"></div> : ''
-			}
-      {(() => {
+				<div className = "loading"></div> : 
+        error? 
+      <div className = 'error-message'> something went wrong, Refresh or  try again...</div>:
+      (() => {
         switch (query) {
           case 'Todos':
           return  (
@@ -87,10 +88,9 @@ function App() {
             <Posts query = {query} posts = {posts}/>
           )
         }
-      })()}
-      {error? 
-      <div className = 'error-message'> something went wrong, try again...</div> : ''
-      }
+      })()
+    }
+      
     </div>
   );
 }
