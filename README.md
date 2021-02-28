@@ -1,3 +1,41 @@
+
+
+### Description:
+A mini web app built to exercise the implementation of React functional component and hooks
+
+### Technology stack:
+* ReactJS
+* Standard Cascade styling sheet(SCSS)
+
+### Status & Purpose:
+A mini web app built to exercise the implementation of React functional component and hooks (useState and UseEffect)
+
+
+### Display: 
+<!-- <img src="Assets/tabletmockup edited.jpg" width="50%" height="50%">  |   <img src="Assets/watch.png" width="18%" height="18%">-->
+ 
+<!-- <img src="Assets/movieApp2.png" width="60%" height="60%">-->
+
+
+
+### Setup:
+1. Copy the repository link 
+2. On your commandline/terminal, change the current working directory to the location where you want the cloned directory.
+3. Type ``` git clone https://github.com/USER_NAME/REPOSITORY_NAME```.(make sure the link is the link to the repository)
+4. press enter to create your local clone.
+
+### Reqirement & Resources for development: 
+ * Any IDE (VSCode, Bracket, Atom, Sublime e.t.c)
+ * Basic knowledge in  ReactJs
+ * knowledge of handling  react components and lifecycles with the use of functional component and react-hooks respectively 
+ * Knowledge in fetching and displaying form of  data from a remote API 
+ * 
+ #### API USED: 
+ [Json placehoder API](https://jsonplaceholder.typicode.com/).
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
