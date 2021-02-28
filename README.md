@@ -31,7 +31,7 @@ A mini web app built to exercise the implementation of React functional componen
  * Knowledge in fetching and displaying form of  data from a remote API 
  * 
  #### API USED: 
- [Json placehoder API](https://jsonplaceholder.typicode.com/)
+ [Json placehoder API](https://jsonplaceholder.typicode.com/).
 
 
 
