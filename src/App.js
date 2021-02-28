@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-// import NavBar from './Component/navbar'
 import './App.css';
 import './Style/style.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -43,7 +42,6 @@ function App() {
 
 
 
-
   return (
     <div className="App">
       <div>
@@ -71,7 +69,7 @@ function App() {
       {loading? 
 				<div className = "loading"></div> : 
         error? 
-      <div className = 'error-message'> something went wrong, Refresh or  try again...</div>:
+      <div className = 'error-message'> something went wrong, Refresh or try again...</div>:
       (() => {
         switch (query) {
           case 'Todos':
@@ -88,9 +86,7 @@ function App() {
             <Posts query = {query} posts = {posts}/>
           )
         }
-      })()
-    }
-      
+      })()} 
     </div>
   );
 }
