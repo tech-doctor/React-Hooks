@@ -1,7 +1,8 @@
 
 
 ### Description:
-A mini web app built to exercise the implementation of React functional component and hooks
+A mini web app built to exercise the implementation of React functional component and hook. it fetches  data of specific resources
+(Posts, Users, and Todos) from [JSoN placehoder API](https://jsonplaceholder.typicode.com/) and displays it on the browser on state change.
 
 ### Technology stack:
 * ReactJS
@@ -31,7 +32,7 @@ A mini web app built to exercise the implementation of React functional componen
  * Knowledge in fetching and displaying form of  data from a remote API 
  * 
  #### API USED: 
- [Json placehoder API](https://jsonplaceholder.typicode.com/).
+ [JSoN placehoder API](https://jsonplaceholder.typicode.com/).
 
 
 
