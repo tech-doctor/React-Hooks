@@ -14,8 +14,7 @@ A mini web app built to exercise the implementation of React functional componen
 
 ### Display: 
 
-<video width="320" height="240" controls autoPlay loop> 
- <source src="Asset/React-hooks.mp4" type=""></source>
+<video width="320" height="240" src="Asset/React-hooks.mp4" type="" controls autoPlay loop> 
   </video>
 	
 
