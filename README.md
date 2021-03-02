@@ -14,9 +14,7 @@ A mini web app built to exercise the implementation of React functional componen
 
 ### Display: 
 
-<img width = "100% " src = "Asset/React-hooks.gif"></img>
-
-![caption](https://res.cloudinary.com/rririsrisurisux/image/upload/v1614713026/React-hooks_izybth.gif)
+![Display](https://res.cloudinary.com/rririsrisurisux/image/upload/v1614713026/React-hooks_izybth.gif)
 
 
 ### Setup:
