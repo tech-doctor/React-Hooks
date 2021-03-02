@@ -14,10 +14,7 @@ A mini web app built to exercise the implementation of React functional componen
 
 ### Display: 
 
-<video width="320" height="240" src="Asset/React-hooks.mp4" type="" controls autoPlay loop> 
-  </video>
-	
-![caption](https://vimeo.com/manage/videos/518724454)
+<img width = "50% " src = "Asset/React-hooks.gif"></img>
 
 
 ### Setup:
