@@ -14,7 +14,7 @@ A mini web app built to exercise the implementation of React functional componen
 
 ### Display: 
 
-<img width = "50% " src = "Asset/React-hooks.gif"></img>
+<img width = "100% " src = "Asset/React-hooks.gif"></img>
 
 
 ### Setup:
