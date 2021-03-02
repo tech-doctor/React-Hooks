@@ -84,6 +84,7 @@ function App() {
           default:
           return (
             <Posts query = {query} posts = {posts}/>
+            
           )
         }
       })()} 
