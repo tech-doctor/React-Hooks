@@ -13,9 +13,11 @@ A mini web app built to exercise the implementation of React functional componen
 
 
 ### Display: 
-<!-- <img src="Assets/tabletmockup edited.jpg" width="50%" height="50%">  |   <img src="Assets/watch.png" width="18%" height="18%">-->
- 
-<!-- <img src="Assets/movieApp2.png" width="60%" height="60%">-->
+w
+	<video width="320" height="240" controls autoPlay loop> 
+ <source src="Asset/React-hooks.mp4" type=""></source>
+  </video>
+	
 
 
 
