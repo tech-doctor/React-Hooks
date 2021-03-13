@@ -1,40 +1,41 @@
+$main-cursor: pointer;
+
 .navBar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0em 1.5em;
-    background-color: rgb(18, 112, 107);
-    color: white;
-}
-.navBar .left{
-    font-size: 22px;
-    cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0em 1.5em;
+	background-color: rgb(18, 112, 107);
+	color: white;
+
+	.left{
+		font-size: 22px;
+		cursor: $main-cursor;
+	}
+	.right{
+		font-size: 20px;
+		cursor: $main-cursor;
+	}
 }
 
-.navBar .right{
-    font-size: 20px;
-    cursor: pointer;
-}
 
 .navDetails{
-    background-color: rgb(32, 34, 32);
-    width: 120px;
-    text-align: center;
-    color: white;
-    border-radius: 10px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1;
-}
-
-.navDetails p{
-    cursor: pointer;
-    padding: 0.5em 0em;
-}
-
-.navDetails p:hover{
-    background-color: rgb(70, 70, 70);
+	background-color: rgb(32, 34, 32);
+	width: 120px;
+	text-align: center;
+	color: white;
+	border-radius: 10px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	z-index: 1;	
+	p{
+		 cursor: $main-cursor;
+		padding: 0.5em 0em;
+	}
+	p:hover{
+	  background-color: rgb(70, 70, 70);
+	}	
 }
 
 .modal-background{
@@ -56,13 +57,14 @@ table{
 }
 
 a{
-    color: rgb(27, 27, 133);
-    text-decoration: none;
+  color: rgb(27, 27, 133);
+	text-decoration: none;		
 }
 
 a:hover{
-    text-decoration: underline;
+	text-decoration: underline;
 }
+
 
 
 table, th, td {
